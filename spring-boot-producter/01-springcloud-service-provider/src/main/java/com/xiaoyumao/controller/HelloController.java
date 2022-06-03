@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class HelloController {
 
+    @RequestMapping("/service/hello2")
+    public String hello2(){
+        return "Hello, Spring Cloud. provider1";
+    }
+
     @RequestMapping("/service/hello")
     public String hello(){
 
